@@ -4,7 +4,7 @@ import torchvision.datasets as dsets
 import torchvision.transforms as transforms
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
-import hw1_318864436_204585301_eval as eval
+import eval
 import numpy as np
 
 """
