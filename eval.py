@@ -3,15 +3,15 @@ import torchvision.datasets as dsets
 import torchvision.transforms as transforms
 from torch.autograd import Variable
 import numpy as np
-import hw1_318864436_204585301_train as hw1
+import train
 
 
 def to_var(x):
     return Variable(x)
 
-def evaluate_hw1():
+def evaluate():
     # loading the model
-    net = torch.load("hw1_model.pkl")
+    net = torch.load("model.pkl")
     #loading the test set
     transform = transforms.Compose([transforms.ToTensor()])
 
@@ -19,8 +19,8 @@ def evaluate_hw1():
 
     test_loader = torch.utils.data.DataLoader(dataset=test_dataset,batch_size=hw1.batch_size,shuffle=False)
 
-    #test_dataset=hw1.test_dataset
-    #test_loader=hw1.test_loader
+    #test_dataset=train.test_dataset
+    #test_loader=train.test_loader
     total_test = 0
     correct_test = 0
     avg_test=[]
