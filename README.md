@@ -40,4 +40,4 @@ learning_rate = 1
 Files Description:
 1. train.py - The MNIST training process
 2. model.pkl - The trained network with trained weights
-3. eval.py - A file with a function called "evaluate_hw1()". The function load the MNIST test-set, load our trained network, and return the average accuracy over the test-set.
+3. eval.py - A file with a function called "evaluate()". The function load the MNIST test-set, load our trained network, and return the average accuracy over the test-set.
