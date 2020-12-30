@@ -163,7 +163,7 @@ for epoch in range(num_epochs):
     train_plt.append(correct_train / total_train)
     test_plt.append(correct_test / total_test)
 
-torch.save(net, 'hw1_model.pkl')
+torch.save(net, 'model.pkl')
 """avg = eval.evaluate_hw1()
 print('avg=',avg)"""
 
